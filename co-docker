@@ -6,7 +6,7 @@ IMAGE_NAME="co-lab"
 
 create_docker() {
 	# Check if the Docker image exists
-	if ! docker image inspect $IMAGE_NAME >/dev/null 2>&1; then
+	if ! docker images | grep -q "$IMAGE_NAME"; then
 		echo "Docker image $IMAGE_NAME not found. Building the image..."
 		docker buildx build --platform linux/amd64 -t $IMAGE_NAME . || return 1
 	fi

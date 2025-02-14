@@ -23,7 +23,7 @@ This document serves as a technical documentation for the Lab Framework itself.
 Before being able to use the Lab Framework, you will need to set up your development environment, based on your operating system.
 Please refer to the [Lab Manual](https://computerscienceeducation.gitbook.io/co-lab-manual/setup-guides/technical-setup) for detailed instructions on how to do this.
 
-This framework is set up to work with [Visual Studio Code (VSCode)](https://code.visualstudio.com) including its GUI debugger.
+This framework is set up to work with [Visual Studio Code (VSCode)](https://code.visualstudio.com/Download) including its GUI debugger.
 Start by opening the framework's root directory in VSCode.
 
 > ⚠️ **Note**: It is important that you do not open VS Code to a parent folder of the framework, as then the setup will not be recognized.
@@ -74,7 +74,7 @@ Now you can build any assignment by running the following command:
 cmake --build .build --target <assignment_target>
 ```
 
-Where `<assignment>` is the name of the assignment you want to build, from the list: `a1`, `a2`, `a3a-iter`, `a3a-rec`, `a3b`, `a4`, `a5`, `a6`, `a7-encode`, `a7-decode`.
+Where `<assignment_target>` is the name of the assignment you want to build, from the list: `a1`, `a2`, `a3a-iter`, `a3a-rec`, `a3b`, `a4`, `a5`, `a6`, `a7-encode`, `a7-decode`.
 
 Once you have built an assignment, you can find the executable in the root directory of the framework.
 You can run the executable by executing:
